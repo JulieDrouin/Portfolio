@@ -1,3 +1,46 @@
+/*____________ANIM/SCISSORS_____________*/
+@keyframes masuperanimation {
+      0% {
+        transform: translateX(-10%);
+      }
+      10% {
+        transform: translateX(-10vmax);
+      }
+      20% {
+        transform: translateX(-20vmax);
+      }
+      30% {
+        transform: translateX(-30vmax);
+      }
+      40% {
+        transform: translateX(-40vmax);
+      }
+      50% {
+        transform: translateX(-50vmax);
+      }
+      60% {
+        transform: translateX(-60vmax);
+      }
+      70% {
+        transform: translateX(-70vmax);
+      }
+      80% {
+        transform: translateX(-80vmax);
+      }
+      90% {
+        transform: translateX(-90vmax);
+      }
+      100% {
+        transform: translateX(-120vmax);
+      }
+    }
+    iframe{
+      float: right;
+      animation: masuperanimation 10s;
+    }
+    #animScissor{
+      padding: 0px;
+    }
 body{
     cursor: url("assets/encre.svg");
     cursor: url("assets.png") 4 12, auto;
