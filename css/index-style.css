@@ -39,7 +39,7 @@
       animation: masuperanimation 10s;
     }
     #animScissor{
-      padding: 0px;
+      padding: 0px!important;
     }
 body{
     cursor: url("assets/encre.svg");
