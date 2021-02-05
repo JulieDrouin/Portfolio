@@ -1,46 +1,70 @@
-/*_______________________ANIM/SCISSOR_______________________*/
+/* _______________________ANIM/SCISSOR_______________________
 @keyframes masuperanimation {
     0% {
+        opacity:1;
         transform: translateX(-10%);
     }
     10% {
+        opacity:1;
         transform: translateX(-10vmax);
     }
     20% {
+        opacity:1;
         transform: translateX(-20vmax);
     }
     30% {
+        opacity:1;
         transform: translateX(-30vmax);
     }
     40% {
+        opacity:1;
         transform: translateX(-40vmax);
     }
     50% {
+        opacity:1;
         transform: translateX(-50vmax);
     }
     60% {
+        opacity:1;
         transform: translateX(-60vmax);
     }
     70% {
+        opacity:1;
         transform: translateX(-70vmax);
     }
     80% {
+        opacity:1;
         transform: translateX(-80vmax);
     }
     90% {
+        opacity:1;
         transform: translateX(-90vmax);
     }
     100% {
+        opacity:0;
         transform: translateX(-120vmax);
     }
 }
+
+    /* div {opacity:0;animation: transition 1s ease-in-out 2s forwards;} */
 iframe{
-    float: right;
-    animation: masuperanimation 10s;
+    -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+    float: right!important;
+    position: absolute;
+    bottom: 0px; right: 0px;
+    /* animation: masuperanimation 10s ease-in-out 1s forwards; */
+    /* top: -10px; right: 0px; */
 }
 #animScissor{
+    z-index: 5;
     padding: 0px!important;
-}
+    /* position: relative; */
+    animation: masuperanimation 10s ease-in-out 1s forwards;
+} */
 
 body{
     cursor: url("assets/encre.svg");
@@ -102,10 +126,11 @@ header {
 }
 /*________________________SECTION-INFO________________________*/
 .row{
-    margin-right: -15px!important; 
+    margin-right: -15px!important;
     margin-left: -15px!important;
 }
 #section-info{
+    z-index: 1;
     position: relative;
     background-color :rgb(3, 22, 37, 0.9);
     padding-bottom: 75px;
@@ -138,8 +163,8 @@ header {
 }
 
 .p-2{
-    font-size: 22px;
-    padding: 0rem!important; 
+    font-size: 20px;
+    padding: 0rem!important;
 }
 
 .coordonnées{
@@ -164,7 +189,7 @@ header {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     position: relative;
-    width: 25%;
+    width: 20%;
     height: 100vh;
     min-height: 600px;
     color: #fff;
@@ -236,7 +261,7 @@ header {
     z-index: 1;
     text-align: center;
     margin: 0 1.618em;
-    top: 55%;
+    top: 20%;
     opacity: 0;
     font-family: "Dosis";
 }
@@ -252,7 +277,7 @@ header {
     font-family: "Dosis";
     padding-top: 15px;
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 50%;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
@@ -263,10 +288,14 @@ header {
 
 .tl-year p {
     font-family: "Dosis";
-    font-size: 1.728rem;
+    font-size: 1.6rem;
     line-height: 0;
 }
 
+/* .tl-item:hover  .tl-year {
+    position: absolute;
+    top: 20px;
+} */
 .tl-bg {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -286,6 +315,7 @@ header {
 
 .content {
     text-align: center;
+    top: 20px;
 }
 /*______________________SECTION-SKILLS______________________*/
 #section-skills{
