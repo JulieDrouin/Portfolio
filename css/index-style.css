@@ -46,115 +46,141 @@
     }
 }
 
-    /* div {opacity:0;animation: transition 1s ease-in-out 2s forwards;} */
-iframe{
+/* div {opacity:0;animation: transition 1s ease-in-out 2s forwards;} */
+/*iframe{
     -webkit-transform: rotate(-90deg);
-   -moz-transform: rotate(-90deg);
-   -ms-transform: rotate(-90deg);
-   -o-transform: rotate(-90deg);
-   transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
     float: right!important;
     position: absolute;
     bottom: 0px; right: 0px;
-    /* animation: masuperanimation 10s ease-in-out 1s forwards; */
-    /* top: -10px; right: 0px; */
+    animation: masuperanimation 10s ease-in-out 1s forwards; */
+    /* top: -10px; right: 0px;
 }
 #animScissor{
     z-index: 5;
     padding: 0px!important;
-    /* position: relative; */
+    position: relative;
     animation: masuperanimation 10s ease-in-out 1s forwards;
 } */
 
-body{
-    cursor: url("assets/encre.svg");
+body {
+    font-family: 'Dosis';
+    font-size: 16px;
+    line-height: 1.75;
 }
+
 /*___________________NAVBAR_____________________________*/
-.navbar{
+
+.navbar {
     padding: 5px;
 }
 
-.nav-link{
-    font-style: none;
-    text-decoration: none;
+.nav-link {
     display: block;
     padding: 0.4rem 1rem;
     color:#FA8072;
     font-size: 20px;
     font-family: "Dosis";
 }
-a:hover{
+
+a:hover {
     color: #15063ffb;
 }
 
-ul {
-    list-style: none;
-}
-
 /*___________________HEADER_____________________________*/
+
 header {
     background: url('../assets/background.png') center center fixed;
-    background-size:cover ;
-    padding-bottom: 50px;
+    background-size: cover ;
 }
 
 #header_wrapper {
     height: 100vh;
     position: relative;
-    top: 35vh;
+    top: 20vh;
 }
-#borderBlockInfo{
-    border-top: solid 1px #15063ffb;
-    border-bottom: solid 1px #15063ffb;
+
+#borderBlockInfo {
     padding:8px;
     height: 300px;
-    background-color :hsla(0,0%,100%,0.6);
     align-items: center;
     font-family: "Dosis";
+    background-color : hsla(0,0%,100%,0.6);
 }
 
 #catchphrase{
-    
+    padding-top: 10px;
+    border-bottom: 1px solid black;
 }
 
-#nowSituation{
-    top: calc(45vh - 100px);
-    align-items:flex-end;
+/*___________________ANIMATION TEXT_____________________________*/
+
+#animText {
+    border-right: 0.15em solid #FA8072;
+    letter-spacing: 0.05em;
+    color:#FA8072;
     font-family: "Dosis";
-    font-size: 37px;
-    line-height: .9em;
+    text-align: start;
+    align-items: flex-end;
+    justify-content: end;
+    margin: 0!important;
+    opacity: 0.8;
+    animation: blink 0.75s step-end infinite;
 }
+
+@keyframes blink {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
 /*________________________SECTION-INFO________________________*/
-.row{
+.row {
     margin-right: -15px!important;
     margin-left: -15px!important;
 }
-#section-info{
+
+#section-info {
     z-index: 1;
     position: relative;
-    background-color :rgb(3, 22, 37, 0.9);
+    background-color : rgb(3, 22, 37, 0.9);
     padding-bottom: 75px;
     padding-top: 75px;
 }
 
+.linkPink {
+    color: rgb(250, 128, 114);
+    font-size: 3.75em;
+}
 
-#inFo{
-    color:white;
+.linkPink:hover {
+    color: rgb(255, 182, 0);
+}
+
+#inFo {
+    color: white;
     border-bottom: 2px solid rgb(250, 128, 114);
 }
 
-#profilPhoto{
+#profilPhoto {
     background-color: rgb(0, 0, 0 , 0.4);
     padding: 15px;
 }
 
 #profil {
-    width:25%;
+    width: 25%;
     margin: 15px;
     background-color: rgb(0, 0, 0 , 0.4);
 }
 
-.border-Info{
+.border-Info {
     background-color: rgb(0, 0, 0 , 0.4);
     justify-content: space-around;
     align-items: center;
@@ -162,21 +188,151 @@ header {
     font-family: "Dosis";
 }
 
-.p-2{
+.p-2 {
     font-size: 20px;
     padding: 0rem!important;
 }
 
-.coordonnées{
+.coordonnées {
     font-family: "Dosis";
-    color:darkgrey;
+    color: darkgrey;
 }
 
-.border-coord{
+.border-coord {
     text-decoration: none;
-    color:white;
+    color: white;
 }
+
+/*______________________SECTION-SKILLS______________________*/
+
+#section-skills {
+    background-color: rgb(255, 182, 0, 0.7);
+    background-size: cover ;
+    padding: 100px 0px 100px 0px;
+}
+
+.skills {
+    margin: 0px 0px 35px 0px;
+}
+
+#mesComp {
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid white;
+}
+
+.skillsRow {
+    padding-top: 40px;
+}
+
+.comp {
+    font-size: 50px;
+    margin: 0 12px;
+    display: contents;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    position: relative;
+    top: calc(50% - 100px);
+    left: 0;
+    overflow: visible;
+    text-align: center;
+}
+
+i.lang, .db {
+    font-size: 100px;
+    margin: 0 12px;
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+    border: 0;
+}
+
+i.lang, .db {
+    opacity: 0;
+    animation-name: bounceIn;
+    animation-duration: 450ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+i.lang, .db {animation-delay: 2s;}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3) translate3d(0,0,0);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1);
+    }
+    80% {
+        opacity: 1;
+        transform: scale(0.89);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translate3d(0,0,0);
+    }
+}
+
+.comp:hover {
+    font-size: 100px;
+    margin: 0 12px;
+    color: #fff;
+    border-color: none;
+}
+
+/*______________________SECTION-PROJECTS______________________*/
+
+#section-projets {
+    background: url('../assets/background.png') center center fixed;
+    background-size: cover ;
+    padding: 100px 0px 100px 0px;
+}
+
+#proj {
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid rgb(250, 128, 114);
+}
+
+.card-title {
+    font-size: 40px;
+}
+
+.card {
+    border-radius: 0rem!important;
+}
+
+.imgTop {
+    height: 200px;
+}
+
+.paint {
+    height: 180px;
+    border-bottom: 1px solid black;
+}
+
+.viewProject {
+    margin: 0 35px;
+    color: rgb(3, 22, 37, 0.9);
+}
+
+.viewProject:hover {
+    color: rgb(255, 182, 0);
+    border-color: none;
+    text-decoration: none;
+}
+
+.view {
+    font-size: 30px;
+}
+
 /*______________________SECTION-TIMELINE______________________*/
+
 #timeline {
     display: flex;
 }
@@ -268,7 +424,7 @@ header {
 
 .tl-content h1 {
     text-transform: uppercase;
-    color:#FA8072;
+    color: #FA8072;
     font-family: "Dosis";
     font-size: 1.44rem;
 }
@@ -296,6 +452,7 @@ header {
     position: absolute;
     top: 20px;
 } */
+
 .tl-bg {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -317,159 +474,71 @@ header {
     text-align: center;
     top: 20px;
 }
-/*______________________SECTION-SKILLS______________________*/
-#section-skills{
-    background-color: rgb(255, 182, 0, 0.7);
-    background-size:cover ;
-    padding-top: 100px;
-}
 
-.skills{
-    margin: 0px 0px 35px 0px;
-}
-
-#mesComp{
-    padding-bottom: 10px;
-    border-bottom: 2.5px solid white;
-}
-.comp{
-    font-size: 50px;
-    margin: 0 12px;
-    display: contents;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    position: absolute;
-    position: relative;
-    top: calc(50% - 100px);
-    left: 0;
-    overflow: visible;
-    text-align: center;
-}
-i.lang, .db{
-    font-size: 100px;
-    margin: 0 12px; 
-    display: block;
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 20px;
-    border: 0;
-}
-
-i.lang, .db{
-    opacity: 0;
-    animation-name: bounceIn;
-    animation-duration: 450ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-}
-i.lang, .db{animation-delay: 2s;}
-
-@keyframes bounceIn{
-    0%{
-        opacity: 0;
-        transform: scale(0.3) translate3d(0,0,0);
-    }
-    50%{
-        opacity: 0.9;
-        transform: scale(1.1);
-    }
-    80%{
-        opacity: 1;
-        transform: scale(0.89);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1) translate3d(0,0,0);
-    }
-}
-
-.comp:hover{
-    font-size: 100px;
-    margin: 0 12px;
-    color: #fff;
-    border-color:none;
-}
-/*______________________SECTION-PROJECTS______________________*/
-#section-projets{
-    background: url('../assets/background.png') center center fixed;
-    background-size:cover ;
-    padding: 100px 0px 100px 0px;
-}
-
-.card-title {
-    font-size: 40px;
-}
-.card{
-    border-radius: 0rem!important;
-}
-#paint{
-    border-bottom: 1px solid black;
-}
 /*_______________________SECTION-HOBBIES_______________________*/
-#section-hobbies{
+
+#section-hobbies {
     color: white;
-    background-color:rgb(3, 22, 37, 0.9);
-    background-size:cover ;
+    background-color: rgb(3, 22, 37, 0.9);
+    background-size: cover ;
     padding: 100px 0px 100px 0px;
     justify-content: space-around;
+    height: 100vh;
 }
+
 i.logo {
-    font-size: 75px;
+    font-size: 55px;
     margin: 0 40px;
 }
-#hob{
+
+#hob {
     padding-bottom: 10px;
     border-bottom: 2.5px solid rgb(255, 182, 0, 0.7);
 }
-.hobbies:hover{
-    color: rgb(255, 182, 0);
-    border-color:none;
+
+.hobbies {
+    border-color: none;
+    margin-top: 15px;
 }
 
+.hobbies:hover {
+    color: rgb(255, 182, 0);
+    border-color: none;
+}
 
 /*___________________SECTION-SOCIAL / FOOTER________________*/
 
-footer{
-    background-color:rgb(250, 128, 114);
+footer {
+    background-color: rgb(250, 128, 114);
     padding: 20px;
+    height: 100vh;
 }
 
-#section-social{
+#section-social {
     padding: 135px;
 }
 
-/*___________________BORDER // BTN________________*/
-
-
-.btn-outline-primary:hover {
-    color: #fff;
-    border-color:none;
-    background-color: #031625;
+#contact {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2.5px solid rgb(255, 182, 0, 0.7);
 }
 
-.btn {
-    border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
-    text-decoration: none;
-    border-color: #031625;
-    outline: none;
-    background-color: transparent;
-    padding: 0.375rem 0.75rem;
-}
-.btn-outline-primary {
-    color: #031625;
-    border-color: #031625;
-    border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+.link {
+    color: black;
+    font-size: 60px;
 }
 
-.border{
-    text-decoration: none;
-    background-color: transparent;
+.link:hover {
+    color: rgb(255, 182, 0);
+    /* font-size: 60px; */
 }
 
-body {
-    font-family: 'Dosis';
-    font-size: 16px;
-    line-height: 1.75;
+.socialLink {
+    margin: 30px;
+    justify-content: space-around;
+}
+
+#copyright {
+    font-size: larger!important;
 }
