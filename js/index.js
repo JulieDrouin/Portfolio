@@ -1,7 +1,6 @@
 
 const info = document.getElementById('animText');
-const text = "RECHERCHE CONTRAT DE PROFESSIONNALISATION";
-const like = "Live, Work, Create"
+const text = "Live, Work, Create";
 let index = 0;
 
 const randomSpeed = (min, max) => {
@@ -21,4 +20,3 @@ const play = () => {
 
 
 let timer = setInterval(play, 300);
-// let timer2 = setInterval(play2, 300);d

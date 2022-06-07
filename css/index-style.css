@@ -116,31 +116,6 @@ header {
     border-bottom: 1px solid black;
 }
 
-/*___________________ANIMATION TEXT_____________________________*/
-
-#animText {
-    border-right: 0.15em solid #FA8072;
-    letter-spacing: 0.05em;
-    color:#FA8072;
-    font-family: "Dosis";
-    text-align: start;
-    align-items: flex-end;
-    justify-content: end;
-    margin: 0!important;
-    opacity: 0.8;
-    animation: blink 0.75s step-end infinite;
-}
-
-@keyframes blink {
-    from,
-    to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: black;
-    }
-}
-
 /*________________________SECTION-INFO________________________*/
 .row {
     margin-right: -15px!important;
@@ -496,7 +471,6 @@ footer {
 
 .link:hover {
     color: rgb(255, 182, 0);
-    /* font-size: 60px; */
 }
 
 .socialLink {
